@@ -1,0 +1,718 @@
+@font-face 
+    font-family: "Space Grotesk"
+    src: url('../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf')
+
+$Green: #B9FF66
+$Grey: #F3F3F3
+$Dark: #191A23    
+
+*
+    padding: 0
+    margin: 0
+    list-style: none
+
+body
+    font-family: "Space Grotesk"
+
+body::-webkit-scrollbar
+    width: 12px
+    background: $Green
+body::-webkit-scrollbar-track
+  background: $Dark
+body::-webkit-scrollbar-thumb
+    background-color: $Green
+    border-radius: 10px
+    border: 3px solid $Dark
+
+h1
+    font-size: 60px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h2
+    font-size: 40px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h3
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h4
+    font-size: 20px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+p
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+button
+    font-family: 'Space Grotesk'
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 28px
+a
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 28px
+    text-decoration: none
+    color: #000
+
+input
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    outline: none 
+    border: none
+textarea
+    font-family: 'Space Grotesk'
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    text-decoration: none
+    outline: none 
+    border: none
+
+label
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 28px
+
+.flex
+    display: flex
+
+.nav-bar
+    margin: 60px 0px 70px
+    padding: 0px 100px
+    justify-content: space-between
+    .logotype
+        width: 14%
+        align-items: flex-start
+        gap: 12.92px
+        cursor: pointer
+        fill: #000
+        transform: rotate(0deg) scale(1)
+        transition: all .8s ease
+        .logo-icon
+            transform-origin: center
+            transform-box: fill-box
+            transition: all 1.2s ease-in-out
+        &:hover
+            transform: scale(1.05)
+            .logo-icon
+                transform: rotate(360deg)
+        
+    .nav-bar-links
+        align-items: center
+        justify-content: space-between
+        gap: 40px
+        font-size: 20px
+        font-weight: 400px
+        li
+            cursor: pointer
+    button
+        padding: 20px 35px
+        border-radius: 14px
+        border: 1px solid $Dark
+        background: #fff
+        cursor: pointer
+        transition: all 0.3s ease
+        &:hover
+            background: $Dark
+            color: #fff
+            transform: scale(1.05)
+.preview
+    max-width: 100%
+    margin: 70px 0
+    padding: 0 100px
+    justify-content: space-between
+    .preview-text
+        float: left
+        flex-direction: column
+        gap: 35px
+        width: 50%
+        align-items: flex-start
+        h1
+            max-width: 60%
+        h4
+            max-width: 60%
+        button
+            padding: 20px 35px
+            border-radius: 14px
+            border: 1px solid $Dark
+            background: $Dark
+            color: #fff
+            cursor: pointer
+            transition: all 0.3s ease
+            &:hover
+                background: #fff
+                color: #000
+                transform: scale(1.05)
+
+.сompanies
+    justify-content: space-between
+    padding: 0 100px
+    background: #fff
+    img
+        mix-blend-mode: luminosity
+.heading
+    margin-top: 140px
+    margin-bottom: 80px
+    gap: 40px
+    padding: 0 100px
+    align-items: center
+    h2
+        padding: 0px 7px
+        border-radius: 7px
+        background: $Green
+    p
+        max-width: 34%
+    &.third-heading
+        p
+            max-width: 18%
+    &.forth-heading
+        p
+            max-width: 30%
+    &.fifth-heading
+        p
+            max-width: 28%
+    &.sixth-heading
+        p
+            max-width: 20%
+
+.cards-wrap
+    flex-wrap: wrap
+    row-gap: 40px
+    padding: 0 100px
+    justify-content: space-between
+    align-content: center
+    .card
+        width: 42%
+        padding: 50px
+        border-radius: 45px
+        border: 1px solid $Dark
+        box-shadow: 0 5px 0 0 $Dark
+        justify-content: space-between
+        .card-link
+                align-items: center
+                gap: 15px
+                transition: transform 0.3s ease
+                cursor: pointer
+                a
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 28px
+                    text-decoration: none
+                &:hover
+                    transform: scale(1.05)
+        .card-layout-left
+            flex-direction: column
+            justify-content: space-between
+            .card-titles
+                flex-direction: column
+                align-items: flex-start
+                h3
+                    display: inline-block
+                    padding: 0 7px
+                    border-radius: 7px
+        &:nth-child(3n+1)
+            background: $Grey
+            .card-titles
+                h3
+                    background: $Green
+            .card-link a
+                color: #000
+        &:nth-child(3n+2)
+            background: $Green
+            .card-titles
+                h3
+                    background: #fff
+            .card-link a
+                color: #000
+        &:nth-child(3n)
+            background: $Dark
+            color: #fff
+            .card-titles
+                h3
+                    background: #fff
+                    color: $Dark
+            .card-link
+                svg
+                    circle
+                        fill: #fff
+                    path
+                        fill: #000
+                a
+                    color: #fff
+        &:last-child
+            .card-titles
+                h3
+                    background: $Green
+                    color: $Dark
+            .card-link
+                svg
+                    circle
+                        fill: #fff
+                    path
+                        fill: #000
+                a
+                    color: #fff
+.cta_block
+    max-width: 100%
+    margin: 70px 0
+    padding: 0 100px
+    .cta_layout
+        border-radius: 45px
+        background: $Grey
+        padding: 0 60px
+        align-items: center
+        justify-content: space-between
+        svg
+            transform: scale(1.1)
+            margin-right: 111px
+        .cta_text_block
+            flex-direction: column
+            width: 30%
+            gap: 26px
+            align-items: flex-start
+            button
+                padding: 20px 35px
+                border-radius: 14px
+                border: 1px solid $Dark
+                background: $Dark
+                color: #fff
+                cursor: pointer
+                transition: all 0.3s ease
+                &:hover
+                    background: #fff
+                    color: #000
+                    transform: scale(1.05)
+
+.case_studies
+    padding: 0px 100px
+    .case_studies_block
+        padding: 70px 60px
+        border-radius: 45px
+        background: $Dark
+        color: #fff
+        flex-wrap: wrap
+        gap: 64px
+        row-gap: 64px
+        .study_line
+                width: 1px
+                background: #FFF
+        .study_layout
+            width: 25%
+            flex-direction: column
+            gap: 20px
+            
+            .study_link_block
+                align-items: center
+                gap: 15px
+                a
+                    color: $Green
+                    text-decoration: none
+.ourWorking
+    padding: 0 100px
+    flex-direction: column
+    flex-wrap: wrap
+    row-gap: 30px
+    .ourWorking_card
+        padding: 41px 60px
+        flex-direction: column
+        gap: 0px
+        border-radius: 45px
+        border: 1px solid $Dark
+        background: $Grey
+        box-shadow: 0 5px 0 0 $Dark
+        transition: all 0.4s ease
+        .card-title-layout
+            align-items: center
+            justify-content: space-between
+            .card_title_block
+                    align-items: center
+                    gap: 25px
+        .ourWorking-line
+            height: 1px
+            background: #000
+        &.expanded
+            background-color: $Green
+            gap: 30px
+
+            .ourWorking-line
+                opacity: 0
+                transform: scaleX(0)
+                transform-origin: left
+                animation: lineAppear 0.3s forwards
+
+            .ourworking-text
+                opacity: 0
+                animation: textFadeIn 0.3s 0.3s forwards
+
+@keyframes lineAppear
+  from
+    opacity: 0
+    transform: scaleX(0)
+  to
+    opacity: 1
+    transform: scaleX(1)
+
+@keyframes textFadeIn
+  from
+    opacity: 0
+    transform: translateY(-20px)
+  to
+    opacity: 1
+    transform: translateY(0)
+.icon-wrapper
+    cursor: pointer
+    transition: transform 0.6s
+    &:hover
+        transform: rotate(360deg)
+
+.teams
+    padding: 0 100px
+    flex-wrap: wrap
+    gap: 40px
+    row-gap: 40px
+    justify-content: space-between
+    .team_card
+        flex-direction: column
+        flex-basis: 22%
+        padding: 40px 35px
+        border-radius: 45px
+        background: #fff
+        border: 1px solid $Dark
+        gap: 28px
+        .person_line
+            height: 1px
+            background: #000
+        .person_title_block
+            justify-content: space-between
+            align-items: flex-end
+            gap: 20px
+            .person_img
+                position: relative
+                img
+                    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkiIGhlaWdodD0iOTgiIHZpZXdCb3g9IjAgMCA5OSA5OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTg0LjYzMSA0OC45MTE3QzExNy40NzMgODYuMzIxMyA4Ny4xNDU1IDExNi42NDkgNDkuNzM1OSA4My44MDY4QzEyLjMyNjMgMTE2LjY0OSAtMTguMDAxNiA4Ni4zMjEzIDE0Ljg0MDggNDguOTExN0MtMTguMDAxNiAxMS41MDIxIDEyLjMyNjMgLTE4LjgyNTggNDkuNzM1OSAxNC4wMTY2Qzg3LjE0NTUgLTE4LjgyNTggMTE3LjQ3MyAxMS41MDIxIDg0LjYzMSA0OC45MTE3WiIgZmlsbD0iIzIzMUYyMCIvPgo8L3N2Zz4K)
+                svg
+                    position: absolute
+                    transform: translate(8%,5%)
+
+            .linkedIn
+                transform: translateY(-160%)
+                cursor: pointer
+            .person_info
+                flex-direction: column
+
+.team-btn_block
+    margin-top: 40px
+    padding: 0 100px
+    justify-content: flex-end
+    align-items: flex-start
+    .team-btn
+        padding: 20px 76px
+        border-radius: 14px
+        border: 1px solid $Dark
+        background: $Dark
+        color: #fff
+        cursor: pointer
+        transition: all 0.3s ease
+        &:hover
+            background: #fff
+            color: #000
+            transform: scale(1.05)
+
+.testimonials
+    padding: 0 100px
+    .testimonials_block
+        position: relative
+        overflow: hidden
+        flex-direction: column
+        gap: 124px
+        padding: 86px 0 68px 0
+        position: relative
+        border-radius: 45px
+        background: $Dark
+        color: #fff
+        align-items: center
+
+        .testimonials_cards
+            align-items: center
+            justify-content: center
+            gap: 40px
+            transition: all .3s ease
+            position: relative
+            .testimonials_card
+                flex: 0 0 40%
+                flex-direction: column
+                gap: 20px
+                align-items: flex-start
+                justify-content: center
+                transition: all 0.8s ease
+                transform: scale(0.9)
+                opacity: .8
+                &.active
+                    // animation: slideActive 1s ease
+                    z-index: 2
+                    transform: scale(1.1)
+                    opacity: 1
+                .testimonials_author_info
+                    flex-direction: column
+                    gap: 5px
+                    margin-left: 10%
+                    .testimonials_author
+                        color: $Green
+                
+
+                .card_bubble
+                    position: relative
+                    p
+                        position: absolute
+                        padding: 48px 52px
+                        margin-bottom: 38px
+                &.slide-left-out
+                    animation: slideLeftOut 1s ease
+                    z-index: 1
+                &.slide-right-out
+                    animation: slideRightOut 1s ease
+                    z-index: 1
+                &.slide-left-in
+                    animation: slideLeftIn 1s ease
+                    z-index: 1
+                &.slide-right-in
+                    animation: slideRightIn 1s ease
+                    z-index: 1
+
+        .slider_handlers
+            width: 30%
+            align-items: center
+            justify-content: space-between
+            gap: 40px
+            .slider-number
+                cursor: pointer
+                opacity: 1
+                transform: scale(1)
+                fill: #fff
+                transition: all 0.3s ease
+                &:hover
+                    transform: scale(1.3)
+                    opacity: 0.8
+                    fill: $Green
+                &.active
+                    transform: scale(1.3)
+                    fill: $Green
+                    opacity: 1
+
+            .slider-arrow
+                width: 32px
+                height: 32px
+                opacity: 0.3
+                transform: scale(1)
+                transition: all 0.3s ease
+                cursor: pointer
+                &:hover
+                    transform: scale(1.1)
+                    opacity: 1
+
+.contact
+    padding: 0px 100px
+    .contact_block
+        background: $Grey
+        padding: 60px 0px 80px 100px
+        border-radius: 45px
+        overflow: hidden
+        justify-content: space-between
+        svg
+            transform: translateX(47%)
+        .contact-form
+            width: 40%
+            flex-direction: column
+            gap: 40px
+            
+            .radio-btn-layout
+                gap: 35px
+                .radio-btn 
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    gap: 14px
+                    transition: all 0.3s ease
+                    input 
+                        width: 28px
+                        height: 28px
+                        appearance: none
+                        border: 1px solid $Dark
+                        border-radius: 50%
+                        cursor: pointer
+                        position: relative
+                        background: #fff
+                        transition: all 0.3s ease
+                        &::before 
+                            content: ""
+                            width: 0
+                            height: 0
+                            background: $Green
+                            border-radius: 50%
+                            position: absolute
+                            inset: 0
+                            margin: auto
+                            box-sizing: border-box
+                            transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease
+                            opacity: 0
+                        &:checked::before 
+                            width: 14px
+                            height: 14px
+                            opacity: 1
+            .input-layout
+                flex-direction: column
+                gap: 25px
+                .input-label-layout
+                    display: flex
+                    flex-direction: column
+                    gap: 5px
+                    input
+                        padding: 18px 30px
+                        border-radius: 14px
+                        border: 1px solid #000
+                        background: #FFF
+                    textarea
+                        box-sizing: border-box
+                        min-width: 100%
+                        max-width: 100%
+                        min-height: 154px
+                        padding: 18px 30px
+                        border-radius: 14px
+                        border: 1px solid #000
+                        background: #FFF
+                button
+                    color: #fff
+                    padding: 20px 35px
+                    border-radius: 14px
+                    background: $Dark
+                    border: 1px solid $Dark
+                    transform: scale(1)
+                    transition: all .3s ease
+                    cursor: pointer
+                    &:hover
+                        color: #000
+                        transform: scale(1.05)
+                        background: #fff
+footer
+    margin-top: 140px
+    padding: 0 100px
+    .footer_block
+        color: #fff
+        padding: 55px 60px 50px
+        border-radius: 45px 45px 0 0
+        background: $Dark
+        flex-direction: column
+        gap: 66px
+        .footerTrash
+            gap: 40px
+            align-items: center
+            justify-content: flex-start
+            a
+                color: #fff
+                font-size: 18px
+                text-decoration-line: underline
+                text-underline-position: from-font
+        .footer-line
+            height: 1px
+            background: #fff
+        .footer_contacts_block
+            gap: 154px
+            justify-content: space-between
+            .footerForm
+                width: 50%
+                padding: 58px 40px
+                background: #292a32
+                border-radius: 14px
+                gap: 20px
+                justify-content: space-between
+                align-items: center
+                input
+                    width: 40%
+                    padding: 22px 35px
+                    border-radius: 14px
+                    border: 1px solid #fff
+                    background: none
+                    color: #fff
+                button
+                    width: 40%
+                    padding: 20px 35px
+                    border-radius: 14px
+                    border: none
+                    background: $Green
+                    cursor: pointer
+                    transform: scale(1)
+                    transition: all .3s ease
+                    cursor: pointer
+                    &:hover
+                        color: #000
+                        transform: scale(1.05)
+                        background: #fff
+                        
+                
+            .footer_contacts_layout
+                flex-direction: column
+                gap: 27px
+                align-items: flex-start
+                max-width: 30%
+                h4
+                    padding: 0px 7px
+                    background: $Green
+                    color: #000
+                    border-radius: 7px
+                .footer-contacts-text
+                    flex-direction: column
+                    gap: 20px
+        .footer-navBar-layout
+            align-items: center
+            justify-content: space-between
+            gap: 155px
+            .logotype
+                width: 15%
+                align-items: flex-start
+                gap: 12.92px
+                cursor: pointer
+                fill: #fff
+                transform: rotate(0deg) scale(1)
+                transition: all .8s ease
+                .logo-icon
+                    transform-origin: center
+                    transform-box: fill-box
+                    transition: all 1.2s ease-in-out
+                &:hover
+                    transform: scale(1.05)
+                    .logo-icon
+                        transform: rotate(360deg)
+            .footerIcons_group
+                gap: 20px
+                align-items: center
+            .nav-bar-links
+                width: 40%
+                gap: 40px
+                justify-content: space-between
+                li
+                    text-decoration: underline
+                    text-decoration-line: underline
+                    text-underline-position: from-font
+                    cursor: pointer
+                    a
+                        color: #fff
+
+

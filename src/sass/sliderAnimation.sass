@@ -1,0 +1,45 @@
+@keyframes sliderIcon
+    0%
+        transform: rotate(0deg)
+    50%
+        transform: rotate(360deg)
+    100%
+        transform: rotate(0deg)
+@keyframes slideLeftOut
+    from
+        transform: translateX(50%) scale(1.1)
+        opacity: 1
+    to
+        transform: translateX(0%) scale(0.9)
+        opacity: 0.8
+
+@keyframes slideRightOut
+    from
+        transform: translateX(-50%) scale(1.1)
+        opacity: 1
+    to
+        transform: translateX(0%) scale(0.9)
+        opacity: 0.8
+
+@keyframes slideLeftIn
+    from
+        transform: translateX(100%) scale(0.9)
+        opacity: 0.8
+    to
+        transform: translateX(0) scale(0.9)
+        opacity: 0.8
+
+@keyframes slideRightIn
+    from
+        transform: translateX(-100%) scale(0.9)
+        opacity: 0.8
+    to
+        transform: translateX(0) scale(0.9)
+        opacity: 0.8
+// @keyframes slideActive
+//     from
+//         transform: scale(0.9)
+//         opacity: 0.8
+//     to
+//         transform: scale(1.1)
+//         opacity: 1
