@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/positivus/static/css/main.cabca2aa.css",
+    "main.js": "/positivus/static/js/main.4c5f006c.js",
+    "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/positivus/static/media/SpaceGrotesk-VariableFont_wght.5771010795a77ba7459b.ttf",
+    "static/media/Analytics.png": "/positivus/static/media/Analytics.375f3ad7f8114e782641.png",
+    "static/media/Content.png": "/positivus/static/media/Content.1e3903e5cd6a0f60d5af.png",
+    "static/media/Email.png": "/positivus/static/media/Email.002380ffd9ed88645ab8.png",
+    "static/media/search.png": "/positivus/static/media/search.cdaac9d7692a9261eacb.png",
+    "static/media/Pay.png": "/positivus/static/media/Pay.6c4de405a0a542fbb01c.png",
+    "static/media/SocialMedia.png": "/positivus/static/media/SocialMedia.dc0fd923b6a7bd47c960.png",
+    "static/media/Emily.png": "/positivus/static/media/Emily.ae5d23736d7525dc1ffb.png",
+    "static/media/Michael.png": "/positivus/static/media/Michael.fd32df596c85f1574968.png",
+    "static/media/John.png": "/positivus/static/media/John.39dcb0f544dc80279318.png",
+    "static/media/Sarah.png": "/positivus/static/media/Sarah.5b3fd74b9154d454a325.png",
+    "static/media/Jane.png": "/positivus/static/media/Jane.025da4812a68b0071a77.png",
+    "static/media/Brian.png": "/positivus/static/media/Brian.19b3c174c56861ceb915.png",
+    "static/media/amazon.svg": "/positivus/static/media/amazon.da32bf545eabec3a649f8cfc06663f99.svg",
+    "static/media/HubSpot.svg": "/positivus/static/media/HubSpot.7e2d432eae5127864e824d6f6286524a.svg",
+    "static/media/dribbble.svg": "/positivus/static/media/dribbble.3e13c2e58394b1b283b9f92791b40fc6.svg",
+    "static/media/zoom.svg": "/positivus/static/media/zoom.e54534902f84853b2204dca3fb120ef7.svg",
+    "static/media/notion.svg": "/positivus/static/media/notion.b79dd781a995ad33ae21ecbef8db90f9.svg",
+    "static/media/netflix.svg": "/positivus/static/media/netflix.a19be8be2f922c0fcc9ba065cd21b148.svg",
+    "index.html": "/positivus/index.html",
+    "main.cabca2aa.css.map": "/positivus/static/css/main.cabca2aa.css.map",
+    "main.4c5f006c.js.map": "/positivus/static/js/main.4c5f006c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cabca2aa.css",
+    "static/js/main.4c5f006c.js"
+  ]
+}
