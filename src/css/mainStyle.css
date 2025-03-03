@@ -232,14 +232,14 @@ label {
 }
 
 .cards-wrap {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   row-gap: 40px;
   padding: 0 100px;
-  justify-content: space-between;
-  align-content: center;
 }
 .cards-wrap .card {
-  width: 42%;
   padding: 50px;
   border-radius: 45px;
   border: 1px solid #191A23;
@@ -463,11 +463,12 @@ label {
 }
 
 .teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 0 100px;
-  flex-wrap: wrap;
-  gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   row-gap: 40px;
-  justify-content: space-between;
 }
 .teams .team_card {
   flex-direction: column;
