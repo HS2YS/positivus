@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/positivus/static/css/main.4203cd96.css",
+    "main.css": "/positivus/static/css/main.0f7b7be3.css",
     "main.js": "/positivus/static/js/main.3459a17f.js",
     "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/positivus/static/media/SpaceGrotesk-VariableFont_wght.5771010795a77ba7459b.ttf",
     "static/media/Analytics.png": "/positivus/static/media/Analytics.375f3ad7f8114e782641.png",
@@ -22,11 +22,11 @@
     "static/media/notion.svg": "/positivus/static/media/notion.b79dd781a995ad33ae21ecbef8db90f9.svg",
     "static/media/netflix.svg": "/positivus/static/media/netflix.a19be8be2f922c0fcc9ba065cd21b148.svg",
     "index.html": "/positivus/index.html",
-    "main.4203cd96.css.map": "/positivus/static/css/main.4203cd96.css.map",
+    "main.0f7b7be3.css.map": "/positivus/static/css/main.0f7b7be3.css.map",
     "main.3459a17f.js.map": "/positivus/static/js/main.3459a17f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4203cd96.css",
+    "static/css/main.0f7b7be3.css",
     "static/js/main.3459a17f.js"
   ]
 }
